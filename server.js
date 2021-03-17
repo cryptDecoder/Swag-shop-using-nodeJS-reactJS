@@ -8,6 +8,8 @@ var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
+var Product = require("./models/product");
+var Wishlist = require("./models/wishlist");
 
 var db = mongoose.connect("mongodb://localhost:27017/swag-shop");
 
